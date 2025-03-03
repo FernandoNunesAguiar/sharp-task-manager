@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\sharp-task-manager-api.props" />
+</Project>

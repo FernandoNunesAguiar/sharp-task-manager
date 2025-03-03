@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer components {
+  .container {
+    background: #011e40;
+  }
+}
+
+h2{
+  color: #ededed;
+}
+
+body {
+  color: #ededed;
+  background: #00142b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  color: black;
+  background: #ededed
+}
+
+button {
+  color: white;
+  background: #1283c4;
+}
+
