@@ -28,7 +28,6 @@ namespace sharp_task_manager_api
 
             app.UseRouting();
 
-            // Use CORS middleware
             app.UseCors("AllowSpecificOrigin");
 
             app.UseEndpoints(endpoints =>

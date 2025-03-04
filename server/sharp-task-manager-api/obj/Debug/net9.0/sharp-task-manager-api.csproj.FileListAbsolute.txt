@@ -26,3 +26,8 @@ C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\De
 C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\sharp-task-manager-api.pdb
 C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\sharp-task-manager-api.genruntimeconfig.cache
 C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\ref\sharp-task-manager-api.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\sharp-task-manager-api.csproj.AssemblyReference.cache
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\sharp-task-manager-api.sourcelink.json
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Npgsql.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\sharp-ta.9F06C508.Up2Date
