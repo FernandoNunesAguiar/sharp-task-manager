@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using DotNetEnv;
 
 namespace sharp_task_manager_api
 {
@@ -7,6 +8,7 @@ namespace sharp_task_manager_api
     {
         public static void Main(string[] args)
         {
+            Env.Load();
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -21,7 +21,7 @@ namespace sharp_task_manager_api.Controllers
             try
             {
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password); // Bcrypting the password
-                string connection = "Host=ep-white-wave-a82m5tlx-pooler.eastus2.azure.neon.tech;Database=task-database;Username=task-database_owner;Password=npg_VZhJyeoBH78g";
+                string connection = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
                 using var conn = new NpgsqlConnection(connection);
                 conn.Open();
                 string query = "INSERT INTO users (email, password) VALUES (@Email, @Password)";
