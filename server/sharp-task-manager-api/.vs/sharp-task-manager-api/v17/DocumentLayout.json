@@ -38,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignupController.cs",
+              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
+              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
+              "RelativeToolTip": "Controllers\\SignupController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T01:15:08.847Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -50,21 +63,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-04T02:25:21.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignupController.cs",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
-              "RelativeToolTip": "Controllers\\SignupController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T01:15:08.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T02:25:21.614Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Startup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:37:49.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T03:37:49.858Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T23:52:23.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T23:52:23.452Z"
             },
             {
               "$type": "Document",

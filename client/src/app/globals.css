@@ -4,9 +4,19 @@
   .container {
     background: #011e40;
   }
+
+  .normalButton {
+    color: white;
+    background: #1283c4;
+  }
+  .closeButton{
+    color: white;
+    background: #c41212;
+    border-radius: 10px;
+  }
 }
 
-h2{
+h2 {
   color: #ededed;
 }
 
@@ -20,9 +30,3 @@ input {
   color: black;
   background: #ededed
 }
-
-button {
-  color: white;
-  background: #1283c4;
-}
-

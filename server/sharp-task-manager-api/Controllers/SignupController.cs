@@ -17,10 +17,11 @@ namespace sharp_task_manager_api.Controllers
             }
 
             // Connection with Neon's PostgreSQL database using Npgsql
-            
-            try {
+
+            try
+            {
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password); // Bcrypting the password
-                string connection = "Host=ep-white-wave-a82m5tlx-pooler.eastus2.azure.neon.tech;Database=task-database;Username=task-database_owner;Password=npg_VZhJyeoBH78g";       
+                string connection = "Host=ep-white-wave-a82m5tlx-pooler.eastus2.azure.neon.tech;Database=task-database;Username=task-database_owner;Password=npg_VZhJyeoBH78g";
                 using var conn = new NpgsqlConnection(connection);
                 conn.Open();
                 string query = "INSERT INTO users (email, password) VALUES (@Email, @Password)";
@@ -30,12 +31,12 @@ namespace sharp_task_manager_api.Controllers
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 System.Diagnostics.Debug.WriteLine("Signed up successfully");
-                return Ok("Signed up successfully");
-                }
-                catch
-                {
-                    System.Diagnostics.Debug.WriteLine("Failed to sign up");
-                    return StatusCode(500, "Internal server error");
+                return Ok(new { message = "Signed up successfully" });
+            }
+            catch
+            {
+                System.Diagnostics.Debug.WriteLine("Failed to sign up");
+                return StatusCode(500, new { message = "Internal server error" });
                 }
         }
     }
