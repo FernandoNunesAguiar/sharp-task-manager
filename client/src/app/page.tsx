@@ -1,8 +1,9 @@
 "use client"
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import LoadingSpinner from "../../components/loadingSpinner";
 import ErrorPanel from "../../components/errorPanel";
+import Link from "next/link";
 
 export default function SignUp() {
   const router = useRouter();
@@ -10,7 +11,8 @@ export default function SignUp() {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const handleSubmit = async (e: any) => {
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
       setLoading(true);
@@ -26,18 +28,18 @@ export default function SignUp() {
       if (!res.ok) {
         const errorData = await res.json();
         throw new Error(errorData.message || 'Signup failed');
-
       }
 
       const data = await res.json();
       console.log(data);
       router.push('/signin');
-    } catch (err) {
+    } catch (err: any) {
       setError(err.message);
     } finally {
       setLoading(false);
     }
   };
+
   const handleCloseErrorPanel = () => {
     setError('');
   };
@@ -46,7 +48,7 @@ export default function SignUp() {
     <div className='static'>
       {loading && <LoadingSpinner />}
       {error && <ErrorPanel onClose={handleCloseErrorPanel}>{error}</ErrorPanel>}
-      <div className='relative md:absolute md:right-15 md:top-25 container md:w-100 rounded-xl md:h-100 flex items-center justify-center overflow-hidden'>
+      <div className='relative md:absolute md:right-15 md:top-25 container md:w-100 rounded-xl md:h-115 flex items-center justify-center overflow-hidden'>
         <form onSubmit={handleSubmit} className='flex items-center justify-center grid grid-row gap-6 place-items-center'>
           <h2 className='text-[50px] flex items-center justify-center'>Sign up</h2>
           <div className='flex items-start grid grid-row gap-4 '>
@@ -56,6 +58,7 @@ export default function SignUp() {
             <input type='password' id='password' onChange={(e) => setPassword(e.target.value)} className='rounded-[12] w-70 h-8' required />
           </div>
           <button type="submit" className='normalButton rounded-full h-12 w-50'>Sign up</button>
+          <Link href="/signin">Already have an account? Sign in</Link>
         </form>
       </div>
       </div>

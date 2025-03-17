@@ -31,3 +31,13 @@ C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\De
 C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\BCrypt.Net-Next.dll
 C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Npgsql.dll
 C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\obj\Debug\net9.0\sharp-ta.9F06C508.Up2Date
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\DotNetEnv.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\Sprache.dll
+C:\Users\chees\Downloads\sharp-task-manager\server\sharp-task-manager-api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll

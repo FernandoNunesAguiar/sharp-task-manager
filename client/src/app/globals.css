@@ -14,6 +14,15 @@
     background: #c41212;
     border-radius: 10px;
   }
+  .closeButton:hover{
+    background: #a80e0e;
+    color: rgb(233, 233, 233);
+  }
+  .normalButton:hover{
+    background: #0e6ba8;
+    color: rgb(233, 233, 233);
+  }
+
 }
 
 h2 {
