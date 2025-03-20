@@ -1,52 +1,46 @@
 "use client"
-import { useRouter } from "next/navigation";
+
 import { useState } from "react";
 import LoadingSpinner from "../../../components/loadingSpinner";
 import ErrorPanel from "../../../components/errorPanel";
 import Link from "next/link";
+import useSignIn from "../../../hook/signin";
 
-export default function SignIn() {
-  const router = useRouter();
+interface SignInFormData {
+  email: string;
+  password: string;
+}
+
+
+const Signin: React.FC = ()=>{
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const handleSubmit = async (e: any) => {
+  const [formData, setFormData] = useState<SignInFormData>({
+    email: '',
+    password: '',
+  });
+
+  const { signIn, loading, apierror } = useSignIn();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+  
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      setLoading(true);
-      setError('');
-      const res = await fetch('http://localhost:5000/api/signin', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
 
-      if (!res.ok) {
-        const errorData = await res.json();
-        throw new Error(errorData.message || 'Signin failed');
-
-      }
-
-      const data = await res.json();
-      console.log(data);
-      router.push('/dashboard');
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
+    signIn(formData.email, formData.password);
   };
-  const handleCloseErrorPanel = () => {
-    setError('');
-  };
+
 
   return (
     <div className='static'>
       {loading && <LoadingSpinner />}
-      {error && <ErrorPanel onClose={handleCloseErrorPanel}>{error}</ErrorPanel>}
+      {apierror && <ErrorPanel onClose={() => {}}>{apierror}</ErrorPanel>}
       <div className='relative md:absolute md:right-15 md:top-25 container md:w-100 rounded-xl md:h-115 flex items-center justify-center overflow-hidden'>
         <form onSubmit={handleSubmit} className='flex items-center justify-center grid grid-row gap-6 place-items-center'>
           <h2 className='text-[50px] flex items-center justify-center'>Sign in</h2>
@@ -65,3 +59,4 @@ export default function SignIn() {
   );
 }
 
+export default Signin;

@@ -42,9 +42,16 @@ namespace sharp_task_manager_api.Controllers
                     if (BCrypt.Net.BCrypt.Verify(request.Password, hashedPassword))
                     {
                         conn.Close();
+                        var cookie = new CookieOptions
+                        {
+                            HttpOnly = true,
+                            SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict,
+                            Secure = true,
+                            Expires = DateTime.UtcNow.AddHours(3)
+                        };
                         var jwtToken = GenerateJwtToken(request.Email);
-                        System.Diagnostics.Debug.WriteLine("Signed in successfully");
-                        return Ok(new { token = jwtToken });
+                        Response.Cookies.Append("AutToken", jwtToken, cookie);
+                        return Ok(new { message = "Signed in successfully" } );
                     }
                     else
                     {

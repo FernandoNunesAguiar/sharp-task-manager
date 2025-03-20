@@ -17,6 +17,14 @@ namespace sharp_task_manager_api
                                       .AllowAnyHeader()
                                       .AllowAnyMethod());
             });
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.SameSite = SameSiteMode.Strict;
+                    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                    options.Cookie.Expiration = TimeSpan.FromHours(3);
+                })
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

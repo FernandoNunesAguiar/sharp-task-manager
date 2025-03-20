@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:sharp-task-manager-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|c:\\users\\chees\\downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A9245A27-2F65-4570-8A25-8CD744FAC7C5}|sharp-task-manager-api.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:15:45.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -54,92 +51,34 @@
               "RelativeToolTip": ".env",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-04T15:05:58.989Z"
+              "WhenOpened": "2025-03-17T02:10:38.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SignupController.cs",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
-              "RelativeToolTip": "Controllers\\SignupController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "Title": "SigninController.cs",
+              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SigninController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SigninController.cs",
+              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SigninController.cs",
+              "RelativeToolTip": "Controllers\\SigninController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T01:15:08.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
-              "RelativeDocumentMoniker": "Startup.cs",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
-              "RelativeToolTip": "Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:37:49.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-03T03:26:08.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-03T03:24:36.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T23:52:23.452Z",
+              "WhenOpened": "2025-03-17T01:43:55.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "sharp-task-manager-api.csproj",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
-              "RelativeDocumentMoniker": "sharp-task-manager-api.csproj",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
-              "RelativeToolTip": "sharp-task-manager-api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-03T02:54:41.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-04T02:25:21.614Z"
+              "Title": "SignupController.cs",
+              "DocumentMoniker": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
+              "ToolTip": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SignupController.cs",
+              "RelativeToolTip": "Controllers\\SignupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T01:15:08.847Z",
+              "EditorCaption": ""
             }
           ]
         }
