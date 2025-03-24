@@ -28,8 +28,8 @@ const useSignIn = () =>{
                 headers: {
                 'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password }),
                 credentials: 'include',
+                body: JSON.stringify({ email, password }),
             });
             if (!res.ok) {
                 const errorData = await res.json();

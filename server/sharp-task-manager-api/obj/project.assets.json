@@ -6484,11 +6484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
+      "projectUniqueName": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
       "projectName": "sharp-task-manager-api",
-      "projectPath": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
+      "projectPath": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
       "packagesPath": "C:\\Users\\chees\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\obj\\",
+      "outputPath": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tXttfcc6C30=",
+  "dgSpecHash": "GYinXNL4UZM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chees\\Downloads\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
+  "projectFilePath": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\sharp-task-manager-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chees\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\chees\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",

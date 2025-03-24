@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System;
 
 namespace sharp_task_manager_api
 {
@@ -15,8 +17,9 @@ namespace sharp_task_manager_api
                 options.AddPolicy("AllowSpecificOrigin",
                     builder => builder.WithOrigins("http://localhost:3000")
                                       .AllowAnyHeader()
-                                      .AllowAnyMethod());
-            });
+                                      .AllowAnyMethod()
+                                      .AllowCredentials());
+        });
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
@@ -24,7 +27,7 @@ namespace sharp_task_manager_api
                     options.Cookie.SameSite = SameSiteMode.Strict;
                     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
                     options.Cookie.Expiration = TimeSpan.FromHours(3);
-                })
+                });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -38,6 +41,9 @@ namespace sharp_task_manager_api
 
             app.UseCors("AllowSpecificOrigin");
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -45,3 +51,4 @@ namespace sharp_task_manager_api
         }
     }
 }
+

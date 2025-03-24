@@ -46,9 +46,9 @@ const Signin: React.FC = ()=>{
           <h2 className='text-[50px] flex items-center justify-center'>Sign in</h2>
           <div className='flex items-start grid grid-row gap-4 '>
             <label>Email</label>
-            <input type="email" id='email' onChange={(e) => setEmail(e.target.value)} className='rounded-[12] w-70 h-8' required />
+            <input type="email" id='email' name="email" onChange={handleChange} className='rounded-[12] w-70 h-8' required />
             <label>Password</label>
-            <input type='password' id='password' onChange={(e) => setPassword(e.target.value)} className='rounded-[12] w-70 h-8' required />
+            <input type='password' id='password' name="password" onChange={handleChange} className='rounded-[12] w-70 h-8' required />
           </div>
           <button type="submit" className='normalButton rounded-full h-12 w-50'>Sign in</button>
           <Link href="/">Don't have an account? Sign up here</Link>

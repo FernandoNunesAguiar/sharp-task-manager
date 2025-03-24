@@ -21,6 +21,7 @@ namespace sharp_task_manager_api.Controllers
             {
                 return BadRequest("Invalid Request");
             }
+
             try
             {
                 string connection = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
