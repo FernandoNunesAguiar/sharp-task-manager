@@ -4,7 +4,7 @@ import { useState } from "react";
 import LoadingSpinner from "../../../components/loadingSpinner";
 import ErrorPanel from "../../../components/errorPanel";
 import Link from "next/link";
-import useSignIn from "../../../hook/signin";
+import useSignIn from "../../../hooks/signin";
 
 interface SignInFormData {
   email: string;
@@ -52,10 +52,9 @@ const Signin: React.FC = ()=>{
           </div>
           <button type="submit" className='normalButton rounded-full h-12 w-50'>Sign in</button>
           <Link href="/">Don't have an account? Sign up here</Link>
-        </form>
-        
+        </form> 
       </div>
-      </div>
+    </div>
   );
 }
 
