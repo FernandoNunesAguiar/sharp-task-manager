@@ -1,8 +1,8 @@
 "use client"
 import { useRouter } from "next/navigation";
 import { useState, FormEvent } from "react";
-import LoadingSpinner from "../../components/loadingSpinner";
-import ErrorPanel from "../../components/errorPanel";
+import LoadingSpinner from "../components/loadingSpinner";
+import ErrorPanel from "../components/errorPanel";
 import Link from "next/link";
 
 export default function SignUp() {

@@ -1,9 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
-
-//* export const metadata: Metadata = {
-//*  title: "Create Next App",
-//*}; 
+import { UserProvider } from "@/context/userContext";
 
 export default function RootLayout({
   children,
@@ -11,10 +7,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <UserProvider>
     <html lang="pt-br">
       <body>
         {children}
       </body>
     </html>
+    </UserProvider>
   );
 }

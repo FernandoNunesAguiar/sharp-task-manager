@@ -52,7 +52,7 @@ namespace sharp_task_manager_api.Controllers
                         };
                         var jwtToken = GenerateJwtToken(request.Email);
                         Response.Cookies.Append("AutToken", jwtToken, cookie);
-                        return Ok(new { message = "Signed in successfully" } );
+                        return Ok(new { message = "Signed in successfully", email = request.Email } );
                     }
                     else
                     {

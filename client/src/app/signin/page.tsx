@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react";
-import LoadingSpinner from "../../../components/loadingSpinner";
-import ErrorPanel from "../../../components/errorPanel";
+import LoadingSpinner from "../../components/loadingSpinner";
+import ErrorPanel from "../../components/errorPanel";
 import Link from "next/link";
-import useSignIn from "../../../hooks/signin";
+import useSignIn from "../../hooks/signin";
 
 interface SignInFormData {
   email: string;

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import icons from "../../../constants/icons"
+import icons from "@/constants/icons"
 
 
 

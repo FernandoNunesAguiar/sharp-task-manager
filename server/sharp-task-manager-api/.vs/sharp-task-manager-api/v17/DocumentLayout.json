@@ -30,20 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
-              "RelativeDocumentMoniker": "Startup.cs",
-              "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
-              "RelativeToolTip": "Startup.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T18:54:59.555Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -64,10 +52,22 @@
               "RelativeDocumentMoniker": "Controllers\\SigninController.cs",
               "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SigninController.cs",
               "RelativeToolTip": "Controllers\\SigninController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T01:43:55.428Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T18:54:59.555Z"
             },
             {
               "$type": "Document",

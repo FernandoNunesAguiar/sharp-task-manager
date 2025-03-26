@@ -1,9 +1,11 @@
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useUser } from "../context/userContext"
 
 
 interface signInResponse{
     token: string;
+    email: string;
 }
 
 interface signInData{
@@ -17,7 +19,8 @@ const useSignIn = () =>{
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [token, setToken] = useState('');
-    
+    const { setAccountEmail } = useUser();
+
     const signIn = async ( email: string, password: string )=>{ 
         setLoading(true);
 
@@ -37,6 +40,8 @@ const useSignIn = () =>{
     
             }
             const response: signInResponse = await res.json();
+            setAccountEmail(response.email);
+            console.log("Account Email:", response.email);
             setToken(response.token);
             router.push('/dashboard');
             } catch (err) {
