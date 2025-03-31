@@ -3,8 +3,10 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 interface UserContextType {
-  accountEmail: string;
-  setAccountEmail: (email: string)=>void;
+    accountEmail: string;
+    setAccountEmail: (email: string)=>void;
+    accountId: number;
+    setAccountId: (id: number)=>void;
 };
 
 
@@ -12,9 +14,10 @@ interface UserContextType {
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
 export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+    const [accountId, setAccountId] = useState<number>(0);
     const [accountEmail, setAccountEmail] = useState<string>('');
     return (
-        <UserContext.Provider value={{ accountEmail, setAccountEmail }}>
+        <UserContext.Provider value={{ accountId, setAccountId, accountEmail, setAccountEmail }}>
         {children}
         </UserContext.Provider>
     );

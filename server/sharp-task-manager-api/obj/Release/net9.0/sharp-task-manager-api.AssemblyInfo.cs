@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sharp-task-manager-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e2261dc1891f3085eba8b82c65b272797a4485c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b4802c781b72ae78419f84b2a473235c8c4183d")]
 [assembly: System.Reflection.AssemblyProductAttribute("sharp-task-manager-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sharp-task-manager-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

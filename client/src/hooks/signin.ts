@@ -5,13 +5,10 @@ import { useUser } from "../context/userContext"
 
 interface signInResponse{
     token: string;
+    userId: string;
     email: string;
 }
 
-interface signInData{
-    email: string;
-    password: string;
-}
 
 
 const useSignIn = () =>{
@@ -19,12 +16,12 @@ const useSignIn = () =>{
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [token, setToken] = useState('');
-    const { setAccountEmail } = useUser();
+    const { setAccountEmail, setAccountId } = useUser();
+
 
     const signIn = async ( email: string, password: string )=>{ 
         setLoading(true);
 
-        const data: signInData = { email, password};
         try{
             const res = await fetch('http://localhost:5000/api/signin', {
                 method: 'POST',
@@ -41,6 +38,8 @@ const useSignIn = () =>{
             }
             const response: signInResponse = await res.json();
             setAccountEmail(response.email);
+            setAccountId(response.userId);
+            
             console.log("Account Email:", response.email);
             setToken(response.token);
             router.push('/dashboard');

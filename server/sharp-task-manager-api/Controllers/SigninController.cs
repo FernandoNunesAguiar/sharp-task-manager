@@ -33,12 +33,16 @@ namespace sharp_task_manager_api.Controllers
 
                 using var conn = new NpgsqlConnection(connection);
                 conn.Open();
-                string query = "SELECT * FROM users WHERE email = @Email";
+                string query = "SELECT id, email, password FROM users WHERE email = @Email";
+
                 using var cmd = new NpgsqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("Email", request.Email);
                 using var reader = cmd.ExecuteReader();
+                
                 if (reader.Read())
                 {
+                    int userId = reader.GetInt32(0);
+                    string email = reader.GetString(1);
                     string hashedPassword = reader.GetString(2);
                     if (BCrypt.Net.BCrypt.Verify(request.Password, hashedPassword))
                     {
@@ -52,7 +56,7 @@ namespace sharp_task_manager_api.Controllers
                         };
                         var jwtToken = GenerateJwtToken(request.Email);
                         Response.Cookies.Append("AutToken", jwtToken, cookie);
-                        return Ok(new { message = "Signed in successfully", email = request.Email } );
+                        return Ok(new { message = "Signed in successfully", email = email, userId = userId } );
                     }
                     else
                     {
