@@ -3,11 +3,35 @@ import Image from "next/image"
 import icons from "../../constants/icons"
 import { useState } from "react"
 import Createtask from "@/components/createtask"
+import { useUser } from "@/context/userContext"
 
 
 export default function Dashboard() {
+    const [ isLoading, setIsLoading ] = useState(false);
+    const { accountId } = useUser();
     
- 
+    const getTasks = async () => {
+    setIsLoading(true);
+    try{
+        const res = await fetch(`http://localhost:5000/api/tasks/${accountId}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+        });
+        if (!res.ok) {
+            const errorData = await res.json();
+            throw new Error(errorData.message);
+        }
+        const data = await res.json();
+        console.log(data);
+    } catch (err) {
+        console.error(err);
+    } finally {
+        setIsLoading(false);
+    }
+    }
 
     const [openCreateTask, setOpenCreateTask] = useState(false)
     const handleClose = () => {

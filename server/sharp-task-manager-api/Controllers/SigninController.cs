@@ -25,12 +25,6 @@ namespace sharp_task_manager_api.Controllers
             try
             {
                 string connection = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
-                if (string.IsNullOrEmpty(connection))
-                {
-                    System.Diagnostics.Debug.WriteLine("Database connection string is not configured");
-                    return StatusCode(500, new { message = "Database connection string is not configured" });
-                }
-
                 using var conn = new NpgsqlConnection(connection);
                 conn.Open();
                 string query = "SELECT id, email, password FROM users WHERE email = @Email";
