@@ -1,37 +1,16 @@
 "use client"
 import Image from "next/image"
 import icons from "../../constants/icons"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Createtask from "@/components/createtask"
+import getTasks from "@/hooks/gettasks"
 import { useUser } from "@/context/userContext"
 
-
 export default function Dashboard() {
-    const [ isLoading, setIsLoading ] = useState(false);
+    const [tasks, setTasks] = useState(null);
     const { accountId } = useUser();
-    
-    const getTasks = async () => {
-    setIsLoading(true);
-    try{
-        const res = await fetch(`http://localhost:5000/api/tasks/${accountId}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            credentials: 'include',
-        });
-        if (!res.ok) {
-            const errorData = await res.json();
-            throw new Error(errorData.message);
-        }
-        const data = await res.json();
-        console.log(data);
-    } catch (err) {
-        console.error(err);
-    } finally {
-        setIsLoading(false);
-    }
-    }
+    const [loading, setLoading] = useState(false);
+    const [ error, setError] = useState(null);
 
     const [openCreateTask, setOpenCreateTask] = useState(false)
     const handleClose = () => {
@@ -41,6 +20,20 @@ export default function Dashboard() {
         setOpenCreateTask(true);
     };
 
+    useEffect(() => {
+        const fetchTasks = async () =>{
+            setLoading(true);
+            const userId = accountId;
+            const data = await getTasks(userId);
+            if (data === null){
+                setError("No tasks found")
+            }
+            else{
+                setTasks(data);
+            }
+        }
+    }
+    , []);
     return(
 
         

@@ -26,19 +26,21 @@ namespace sharp_task_manager_api.Controllers
                 {
                   task_name = reader.GetString(0);
                     conn.Close();
+                    return Ok(new { message = "Get tasks for account " + accountId, task_name = task_name });
+
 
                 }
                 else
                 {
                     conn.Close();
-                    task_name = null;
+                    return NotFound(new { message = "Task not found" });
+
                 }
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { message = "Internal server error", error = ex.Message });
             }
-            return Ok(new { message = "Get tasks for account " + accountId, task_name = task_name });
         }
     }
  }
