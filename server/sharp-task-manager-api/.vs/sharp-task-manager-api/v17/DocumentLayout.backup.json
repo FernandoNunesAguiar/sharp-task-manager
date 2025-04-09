@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
               "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\TasksController.cs",
               "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T22:21:11.626Z",
               "IsPinned": true,
@@ -54,7 +54,7 @@
               "RelativeDocumentMoniker": "Controllers\\SigninController.cs",
               "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SigninController.cs",
               "RelativeToolTip": "Controllers\\SigninController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T18:58:49.699Z",
               "EditorCaption": ""
@@ -69,8 +69,7 @@
               "RelativeToolTip": "Controllers\\NewtaskController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:40:25.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:40:25.96Z"
             },
             {
               "$type": "Document",
@@ -82,8 +81,7 @@
               "RelativeToolTip": "Startup.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T18:54:59.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T18:54:59.555Z"
             },
             {
               "$type": "Document",
@@ -95,8 +93,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAmwBgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T02:15:45.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T02:15:45.236Z"
             }
           ]
         }

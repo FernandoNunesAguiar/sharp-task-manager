@@ -1,12 +1,5 @@
-import { useState } from "react";
-import { useUser } from "@/context/userContext";
+const getTasks = async (accountId: number) => {
 
-const getTasks = async (userId: string) => {
-    const [ isLoading, setIsLoading ] = useState(false);
-    const { accountId } = useUser();
-    
-    const fetchTasks = async () => {
-    setIsLoading(true);
     try{
         const res = await fetch(`http://localhost:5000/api/tasks/${accountId}`, {
             method: 'GET',
@@ -15,6 +8,9 @@ const getTasks = async (userId: string) => {
             },
             credentials: 'include',
         });
+        if (res.status === 404) {
+            return null;
+        }
         if (!res.ok) {
             const errorData = await res.json();
             throw new Error(errorData.message);
@@ -24,9 +20,7 @@ const getTasks = async (userId: string) => {
         return data;
     } catch (err) {
         console.error(err);
-    } finally {
-        setIsLoading(false);
-    }
+        throw err;
     }
 }
 

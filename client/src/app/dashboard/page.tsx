@@ -3,14 +3,14 @@ import Image from "next/image"
 import icons from "../../constants/icons"
 import { useState, useEffect } from "react"
 import Createtask from "@/components/createtask"
-import getTasks from "@/hooks/gettasks"
+import getTasks from "@/lib/gettasks"
 import { useUser } from "@/context/userContext"
 
 export default function Dashboard() {
-    const [tasks, setTasks] = useState(null);
+    const [tasks, setTasks] = useState([]);
     const { accountId } = useUser();
     const [loading, setLoading] = useState(false);
-    const [ error, setError] = useState(null);
+    const [ error, setError] = useState('');
 
     const [openCreateTask, setOpenCreateTask] = useState(false)
     const handleClose = () => {
@@ -22,18 +22,31 @@ export default function Dashboard() {
 
     useEffect(() => {
         const fetchTasks = async () =>{
+            if (!accountId) {
+                setError("Sign in.");
+                return;
+            }
             setLoading(true);
-            const userId = accountId;
-            const data = await getTasks(userId);
-            if (data === null){
-                setError("No tasks found")
+            setError(null);
+            try {
+                const data = await getTasks(accountId);
+                if (!data || data.length === 0) {
+                    setError("No tasks found")
+                }
+                else{
+                    setTasks(data.tasks);
+                }
+            } catch (err) {
+                setError("Error fetching tasks");
+                console.log("Error fetching tasks");
+            } finally {
+                setLoading(false);
             }
-            else{
-                setTasks(data);
-            }
-        }
-    }
-    , []);
+
+        };
+
+        fetchTasks();
+    }, [accountId]);
     return(
 
         
@@ -48,7 +61,28 @@ export default function Dashboard() {
                             height={70}
                         />
                     </button>
-
+                    <div>
+                        {loading && <p>Loading tasks...</p>}
+                        {error && <p>{error}</p>}
+                        {!loading && !error && tasks.length > 0 &&(
+                      
+                        <div>
+                              {tasks.map((task : any)=> (
+                        
+                        
+                                <div key={task.id}>
+                                    <ul>
+                                        <li>
+                                            <div className="flex flex-col w-100 h-100 bg-white rounded-lg shadow-md p-4 m-4">
+                                                <h2 className="text-xl font-bold ">{task.task_name}</h2>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                        )}
+                    </div>
                 </div>
             </div>
             <div>
@@ -56,5 +90,5 @@ export default function Dashboard() {
             </div>
 
         </div>
-    )
+    );
 }
