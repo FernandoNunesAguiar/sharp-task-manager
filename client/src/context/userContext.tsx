@@ -1,25 +1,25 @@
 "use client"
 
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, { createContext, useContext, useState, ReactNode, useEffect } from "react";
 
 interface UserContextType {
-    accountEmail: string;
-    setAccountEmail: (email: string)=>void;
     accountId: number;
     setAccountId: (id: number)=>void;
 };
 
-
-
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
-export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+interface UserProps{
+    children: ReactNode;
+}
+
+
+export const UserProvider = ({ children }: UserProps) => {
     const [accountId, setAccountId] = useState<number>(0);
-    const [accountEmail, setAccountEmail] = useState<string>('');
     return (
-        <UserContext.Provider value={{ accountId, setAccountId, accountEmail, setAccountEmail }}>
+      <UserContext.Provider value={{ accountId, setAccountId }}>
         {children}
-        </UserContext.Provider>
+      </UserContext.Provider>
     );
 };
 

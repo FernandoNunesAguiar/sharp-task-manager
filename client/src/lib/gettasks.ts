@@ -18,9 +18,9 @@ const getTasks = async (accountId: number) => {
         const data = await res.json();
         console.log(data);
         return data;
-    } catch (err) {
-        console.error(err);
-        throw err;
+    } catch (error) {
+        console.error(error);
+        throw error;
     }
 }
 

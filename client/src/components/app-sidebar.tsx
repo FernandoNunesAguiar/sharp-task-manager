@@ -1,6 +1,7 @@
 "use client";
 import { Calendar, Home, Inbox, Search, Settings, ChevronUp } from "lucide-react"
 import { useUser } from "../context/userContext"
+import { useEffect, useState } from "react";
 
 import {
   Sidebar,
@@ -50,7 +51,32 @@ const items = [
 ]
 
 export function AppSidebar() {
-  const { accountEmail } = useUser();
+  const { accountId } = useUser();
+  const [ accountEmail, setAccountEmail] = useState("loading...")
+  useEffect(() => {
+    const fetchEmail = async () => {
+      try{
+        const res = await fetch(`http://localhost:5000/api/profile/${accountId}`, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          credentials: 'include',
+        });
+        if (!res.ok) {
+          throw new Error('failed to fetch email');
+        }
+        const data = await res.json();
+        setAccountEmail(data.email);
+      } catch (err){
+        console.log(err);
+      }
+    };
+    if (accountId){
+      fetchEmail();
+    }
+  }, [accountId]);
+
   return (
     <Sidebar>
       <SidebarContent>
@@ -78,7 +104,7 @@ export function AppSidebar() {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <SidebarMenuButton>
-                    <h2>{accountEmail ? accountEmail : "Loading..."}</h2>
+                    <h2>{accountEmail}</h2>
                     <ChevronUp className="ml-auto" />
                   </SidebarMenuButton>
                 </DropdownMenuTrigger>

@@ -3,7 +3,7 @@ import Image from "next/image"
 import icons from "../../constants/icons"
 import { useState, useEffect } from "react"
 import Createtask from "@/components/createtask"
-import getTasks from "@/lib/gettasks"
+import getTasks from "@/lib/getTasks";
 import { useUser } from "@/context/userContext"
 
 export default function Dashboard() {
@@ -27,7 +27,7 @@ export default function Dashboard() {
                 return;
             }
             setLoading(true);
-            setError(null);
+            setError('');
             try {
                 const data = await getTasks(accountId);
                 if (!data || data.length === 0) {

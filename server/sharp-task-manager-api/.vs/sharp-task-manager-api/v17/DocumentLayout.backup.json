@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\ProfileCotroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ProfileCotroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\TasksController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\TasksController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TasksController.cs",
               "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
               "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\TasksController.cs",
               "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T22:21:11.626Z",
               "IsPinned": true,
@@ -48,20 +52,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ProfileCotroller.cs",
+              "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\ProfileCotroller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfileCotroller.cs",
+              "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\ProfileCotroller.cs",
+              "RelativeToolTip": "Controllers\\ProfileCotroller.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T18:57:05.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SigninController.cs",
               "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SigninController.cs",
               "RelativeDocumentMoniker": "Controllers\\SigninController.cs",
               "ToolTip": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\SigninController.cs",
               "RelativeToolTip": "Controllers\\SigninController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T18:58:49.699Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NewtaskController.cs",
               "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Controllers\\NewtaskController.cs",
               "RelativeDocumentMoniker": "Controllers\\NewtaskController.cs",
@@ -73,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
@@ -85,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chees\\OneDrive\\Documentos\\sharp-task-manager\\server\\sharp-task-manager-api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
